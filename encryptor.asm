@@ -24,10 +24,6 @@ section .text
         lea r8, [encrypted_message]
         call decrypt
 
-        lea rsi, [encrypted_message]
-        ; rdx is already filled
-        call print
-        
         lea rsi, [decrypted_message]
         call print
 
